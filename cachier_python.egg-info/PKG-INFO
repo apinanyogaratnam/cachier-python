@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: cachier-python
-Version: 0.1.4
+Version: 0.1.5
 Summary: A python wrapper package for connecting to a self-hosted cachier service
 Home-page: https://github.com/apinanyogaratnam/cachier-python
 Author: apinanyogaratnam
@@ -60,5 +60,9 @@ Please [open an issue](https://github.com/apinanyogaratnam/cachier-python/issues
 ## Contributing
 
 Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/apinanyogaratnam/cachier-python/compare/). -->
+
+<!--
+TODO: raise a custom error if connection fails
+-->
 
 

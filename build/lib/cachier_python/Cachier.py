@@ -17,7 +17,7 @@ class Cachier:
 
         if not response_json: return None
 
-        return response_json['cache_value']
+        return response_json['value']
 
     def set(self: 'Cachier', key: str, value: object, expiry: int | None) -> bool:
         if not key: return False
