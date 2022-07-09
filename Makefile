@@ -1,4 +1,4 @@
-IMAGE := base-python-template
+IMAGE := cachier-python
 VERSION := 0.1.0
 REGISTRY_URL := ghcr.io/apinanyogaratnam/${IMAGE}
 IMAGE_VERSION_NAME := ${REGISTRY_URL}:${VERSION}
