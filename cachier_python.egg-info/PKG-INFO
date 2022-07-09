@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: cachier-python
-Version: 0.1.3
+Version: 0.1.4
 Summary: A python wrapper package for connecting to a self-hosted cachier service
 Home-page: https://github.com/apinanyogaratnam/cachier-python
 Author: apinanyogaratnam
