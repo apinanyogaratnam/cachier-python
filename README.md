@@ -2,7 +2,9 @@
 
 A python library wrapper for using a self-hosted cachier service.
 
-<!-- ## Table of Contents
+URL: [cachier-python](https://pypi.org/project/cachier-python/)
+
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -11,32 +13,34 @@ A python library wrapper for using a self-hosted cachier service.
 
 ## Installation
 
-Download to your project directory, add `README.md`, and commit:
+Install the package from pypi:
 
 ```sh
-curl -LO http://git.io/Xy0Chg
-git add README.md
-git commit -m "Use README Boilerplate"
+pip install cachier-python
 ```
 
 ## Usage
 
-Replace the contents of `README.md` with your project's:
+```python
+from cachier_python import Cachier
 
-- Name
-- Description
-- Installation instructions
-- Usage instructions
-- Support instructions
-- Contributing instructions
-- License
+# Create a cachier instance to connect to the service
+client = Cachier('http://localhost:8000')
 
-Feel free to remove any sections that aren't applicable to your project.
+# cache expiry in seconds
+CACHIER_EXPIRY = 600
+
+# set the cache
+client.set(key='my_key', value='my_value', expiry=CACHIER_EXPIRY)
+
+# get the cached value
+cached_value = client.get(key='my_key')
+```
 
 ## Support
 
-Please [open an issue](https://github.com/fraction/readme-boilerplate/issues/new) for support.
+Please [open an issue](https://github.com/apinanyogaratnam/cachier-python/issues/new) for support.
 
 ## Contributing
 
-Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/fraction/readme-boilerplate/compare/). -->
+Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/apinanyogaratnam/cachier-python/compare/). -->
