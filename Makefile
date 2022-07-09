@@ -16,7 +16,10 @@ venv:
 	python3 -m venv venv
 
 workflow:
-	git tag -m "v${VERSION}" v${VERSION} && git push --tags
+	git tag -m "v${VERSION}" v${VERSION}
+	git push --tags
+	make build
+	make upload
 
 upload:
 	twine upload dist/*
