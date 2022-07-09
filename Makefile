@@ -6,6 +6,9 @@ IMAGE_LATEST_VERSION_NAME := ${REGISTRY_URL}:latest
 
 .PHONY: venv
 
+build:
+	python3 setup.py bdist_wheel
+
 freeze:
 	pip freeze > requirements.txt
 
