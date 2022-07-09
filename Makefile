@@ -4,7 +4,7 @@ REGISTRY_URL := ghcr.io/apinanyogaratnam/${IMAGE}
 IMAGE_VERSION_NAME := ${REGISTRY_URL}:${VERSION}
 IMAGE_LATEST_VERSION_NAME := ${REGISTRY_URL}:latest
 
-.PHONY: venv
+.PHONY: venv, build
 
 build:
 	python3 setup.py bdist_wheel
