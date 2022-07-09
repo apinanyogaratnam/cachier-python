@@ -17,3 +17,6 @@ venv:
 
 workflow:
 	git tag -m "v${VERSION}" v${VERSION} && git push --tags
+
+upload:
+	twine upload dist/*
