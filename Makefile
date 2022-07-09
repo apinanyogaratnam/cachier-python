@@ -16,10 +16,6 @@ venv:
 	python3 -m venv venv
 
 workflow:
-	make build
-	make upload
-	git add .
-	git commit -m 'built package'
 	git tag -m "v${VERSION}" v${VERSION}
 	git push --tags
 
