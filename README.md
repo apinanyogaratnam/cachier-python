@@ -44,3 +44,7 @@ Please [open an issue](https://github.com/apinanyogaratnam/cachier-python/issues
 ## Contributing
 
 Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/apinanyogaratnam/cachier-python/compare/). -->
+
+<!--
+TODO: raise a custom error if connection fails
+-->
