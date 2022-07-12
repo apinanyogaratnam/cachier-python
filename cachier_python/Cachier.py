@@ -19,7 +19,7 @@ class Cachier:
 
         return response_json['value']
 
-    def set(self: 'Cachier', key: str, value: object, expiry: int | None) -> bool:
+    def set(self: 'Cachier', key: str, value: object, expiry: int | None = None) -> bool:
         if not key: return False
 
         url: str = f'{self.url}'
