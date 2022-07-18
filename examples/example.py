@@ -1,6 +1,6 @@
 from cachier_python import Cachier
 
-client = Cachier('http://localhost:8000')
+client = Cachier('http://localhost:8000', driver='ram')
 
 client.set('key', 'value', 600)
 
