@@ -20,4 +20,4 @@ workflow:
 	git push --tags
 
 upload:
-	twine upload dist/*
+	twine upload dist/cachier_python-${VERSION}-py3-none-any.whl
