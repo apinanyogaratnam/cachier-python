@@ -47,4 +47,5 @@ Please contribute using [Github Flow](https://guides.github.com/introduction/flo
 
 <!--
 TODO: raise a custom error if connection fails
+TODO: user would call the types package for getting possible drivers and use the enums to pass into init method instead of passing in raw string when initializing Cachier class
 -->
