@@ -9,7 +9,7 @@ class Cachier:
     def get(self: 'Cachier', key: str) -> object:
         if not key: return None
 
-        url: str = f'{self.url}?cache_key={key}&cache_driver={self.driver}'
+        url: str = f'{self.url}?cache_key={key}&driver={self.driver}'
         response: requests.Response = requests.get(url)
 
         if response.status_code != 200: return None
