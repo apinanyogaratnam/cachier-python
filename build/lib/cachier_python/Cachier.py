@@ -2,13 +2,14 @@ import requests
 
 
 class Cachier:
-    def __init__(self: 'Cachier', url: str) -> None:
+    def __init__(self: 'Cachier', url: str, driver: str = None) -> None:
         self.url = url
+        self.driver = driver
 
     def get(self: 'Cachier', key: str) -> object:
         if not key: return None
 
-        url: str = f'{self.url}?cache_key={key}'
+        url: str = f'{self.url}?cache_key={key}&driver={self.driver}'
         response: requests.Response = requests.get(url)
 
         if response.status_code != 200: return None
@@ -26,7 +27,8 @@ class Cachier:
         response: requests.Response = requests.post(url, json={
             'cache_key': key,
             'cache_value': value,
-            'cache_expiry': expiry
+            'cache_expiry': expiry,
+            'driver': self.driver,
         })
 
         if response.status_code != 200: return False
