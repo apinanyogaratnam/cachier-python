@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: cachier-python
-Version: 0.1.6
+Version: 0.1.7
 Summary: A python wrapper package for connecting to a self-hosted cachier service
 Home-page: https://github.com/apinanyogaratnam/cachier-python
 Author: apinanyogaratnam
@@ -41,7 +41,7 @@ pip install cachier-python
 from cachier_python import Cachier
 
 # Create a cachier instance to connect to the service
-client = Cachier('http://localhost:8000')
+client = Cachier('http://localhost:8000', driver='ram')
 
 # cache expiry in seconds
 CACHIER_EXPIRY = 600
@@ -63,6 +63,7 @@ Please contribute using [Github Flow](https://guides.github.com/introduction/flo
 
 <!--
 TODO: raise a custom error if connection fails
+TODO: user would call the types package for getting possible drivers and use the enums to pass into init method instead of passing in raw string when initializing Cachier class
 -->
 
 
