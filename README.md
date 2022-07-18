@@ -25,7 +25,7 @@ pip install cachier-python
 from cachier_python import Cachier
 
 # Create a cachier instance to connect to the service
-client = Cachier('http://localhost:8000')
+client = Cachier('http://localhost:8000', driver='ram')
 
 # cache expiry in seconds
 CACHIER_EXPIRY = 600
