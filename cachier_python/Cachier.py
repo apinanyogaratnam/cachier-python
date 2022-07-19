@@ -1,6 +1,7 @@
 import requests
 
 
+# TODO: this is where to raise exception if driver is not none or not valid
 class Cachier:
     def __init__(self: 'Cachier', url: str, driver: str = None) -> None:
         self.url = url
