@@ -1,6 +1,6 @@
 import requests
 
-from cachier_common_library.DriverType import DriverType
+from cachier_common_library import DriverType
 
 
 class Cachier:
