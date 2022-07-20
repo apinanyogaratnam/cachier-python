@@ -48,6 +48,16 @@ DriverType.SQLITE
 DriverType.PICKLE
 ```
 
+check if a driver is valid:
+
+```python
+from cachier_python import DriverType
+
+is_valid = DriverType().is_valid(DriverType.RAM)
+
+print(is_valid)
+```
+
 ## Support
 
 Please [open an issue](https://github.com/apinanyogaratnam/cachier-python/issues/new) for support.
