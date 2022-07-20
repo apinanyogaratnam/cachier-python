@@ -1,5 +1,5 @@
 bleach==5.0.1
-cachier-common-library==0.0.4
+cachier-common-library==0.0.5
 cachier-python==0.1.2
 certifi==2022.6.15
 charset-normalizer==2.1.0
