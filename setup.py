@@ -5,7 +5,7 @@ with open('README.md', 'r') as f:
 
 setuptools.setup(
     name='cachier-python',
-    version='0.2.0',
+    version='0.4.0',
     author='apinanyogaratnam',
     author_email='apinanapinan@icloud.com',
     description='A python wrapper package for connecting to a self-hosted cachier service',
