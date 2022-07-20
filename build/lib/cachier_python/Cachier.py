@@ -1,9 +1,17 @@
 import requests
 
+from cachier_common_library import DriverType
+
 
 class Cachier:
     def __init__(self: 'Cachier', url: str, driver: str = None) -> None:
         self.url = url
+
+        if driver:
+            is_valid_driver = DriverType.is_valid(driver)
+            if not is_valid_driver:
+                raise Exception('provided driver is not valid')
+
         self.driver = driver
 
     def get(self: 'Cachier', key: str) -> object:
