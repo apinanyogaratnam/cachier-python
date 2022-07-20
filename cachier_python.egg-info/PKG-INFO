@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: cachier-python
-Version: 0.5.2
+Version: 0.6.0
 Summary: A python wrapper package for connecting to a self-hosted cachier service
 Home-page: https://github.com/apinanyogaratnam/cachier-python
 Author: apinanyogaratnam
@@ -62,6 +62,16 @@ DriverType.RAM
 DriverType.JSON
 DriverType.SQLITE
 DriverType.PICKLE
+```
+
+check if a driver is valid:
+
+```python
+from cachier_python import DriverType
+
+is_valid = DriverType().is_valid(DriverType.RAM)
+
+print(is_valid)
 ```
 
 ## Support
