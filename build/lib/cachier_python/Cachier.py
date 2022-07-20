@@ -1,6 +1,6 @@
 import requests
 
-from cachier_common_library import DriverType
+from cachier_common_library import DriverType, DriverTypeError
 
 
 class Cachier:
@@ -10,7 +10,7 @@ class Cachier:
         if driver:
             is_valid_driver = DriverType.is_valid(driver)
             if not is_valid_driver:
-                raise Exception('provided driver is not valid')
+                raise DriverTypeError('provided driver is not valid')
 
         self.driver = driver
 
