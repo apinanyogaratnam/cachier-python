@@ -8,7 +8,7 @@ class Cachier:
         self.url = url
 
         if driver:
-            is_valid_driver = DriverType.is_valid(driver)
+            is_valid_driver = DriverType().is_valid(driver)
             if not is_valid_driver:
                 raise DriverTypeError('provided driver is not valid')
 
