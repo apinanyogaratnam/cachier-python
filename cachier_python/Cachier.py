@@ -4,8 +4,9 @@ from cachier_common_library import DriverType, DriverTypeError
 
 
 class Cachier:
-    def __init__(self: 'Cachier', url: str, driver: str = None) -> None:
+    def __init__(self: 'Cachier', url: str, driver: str = None, storage: str = 'server') -> None:
         self.url = url
+        self.storage = storage
 
         if driver:
             is_valid_driver = DriverType().is_valid(driver)
